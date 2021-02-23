@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  database:
+    container_name: potter_database
+    image: postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: test
+    ports:
+      - "5432:5432"
