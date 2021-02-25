@@ -5,7 +5,6 @@ import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity(name = "author")
 @Data
