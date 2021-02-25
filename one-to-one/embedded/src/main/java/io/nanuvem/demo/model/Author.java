@@ -37,8 +37,8 @@ public class Author {
   /**
    * books
    */
-  @OneToOne(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
-  @JoinColumn(name = "book_id", referencedColumnName = "id")
+  @OneToOne(cascade = {CascadeType.ALL})
+  @JoinColumn(name = "book_id", referencedColumnName = "id", unique= true)
   private Book book;
 
   @Column(name = "deleted", nullable = false)
