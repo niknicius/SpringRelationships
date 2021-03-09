@@ -28,6 +28,7 @@ public class Book {
   @Column(name = "edition")
   private Double edition;
 
+
   @Column(name = "deleted", nullable = false)
   private Boolean deleted = false;
 }

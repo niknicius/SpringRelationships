@@ -38,7 +38,8 @@ public class Author {
   /**
    * books
    */
-  @OneToMany(cascade = {CascadeType.ALL}, orphanRemoval = false)
+  @OneToMany(fetch = FetchType.LAZY, orphanRemoval = false)
+  @JoinColumn(name = "author_id", referencedColumnName = "id")
   private List<Book> books;
 
   @Column(name = "deleted", nullable = false)
